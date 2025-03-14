@@ -1,0 +1,228 @@
+/* General Styles */
+.home-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -80px;
+}
+
+.homepage-background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.homepage-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.homepage-head {
+  font-size: 1.5rem; /* Adjusted default font size for better responsiveness */
+  margin-bottom: 20px;
+}
+
+.homepage-para {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.homelogoimage {
+  margin-left: -690px;
+  margin-top: -190px;
+  width: 600px;
+  height: auto;
+  animation: zoomIn 2.5s ease-in-out;
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .homelogoimage {
+    width: 500px;
+    margin-left: -500px;
+    margin-top: -150px;
+  }
+}
+
+/* For small tablets & big phones */
+@media (max-width: 768px) {
+  .homelogoimage {
+    width: 400px;
+    margin-left: -350px;
+    margin-top: -120px;
+  }
+}
+
+/* For mobile screens including iPhones */
+@media (max-width: 576px) {
+  .homelogoimage {
+    width: 300px;
+    margin-left: -250px;
+    margin-top: -100px;
+  }
+}
+
+/* For very small phones */
+@media (max-width: 400px) {
+  .homelogoimage {
+    width: 250px;
+    margin-left: -200px;
+    margin-top: -80px;
+  }
+}
+
+
+
+
+@media (max-width: 460px) {
+  .homepage-background-video {
+    position: absolute;
+    height: 65%; /* Further adjust height for very small screens */
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .homepage-content {
+    margin-top: -50px; /* Ensure content is visible and centered */
+  }
+
+  .homepage-content p {
+    font-size: 13px !important; /* Smaller font for mini phones */
+    line-height: 1.2; /* Adjust line spacing for readability */
+  width: 300px !important;
+  margin-left: 25%;
+  }
+
+  .homepage-content h3 {
+    font-size: 16px !important; /* Adjust heading size for mini phones */
+  }
+
+  .home-container {
+    height: 75vh; /* Adjust container height */
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .homepage-background-video {
+    position: absolute;
+    height: 70%; /* Adjust height for small screens */
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .homepage-content {
+    margin-top: -80px;
+  }
+
+  .homepage-content p {
+    font-size: 12px !important; /* Adjusted for readability */
+  }
+
+  .homepage-content h3 {
+    font-size: 18px !important; /* Adjusted for readability */
+  }
+
+  .home-container {
+    height: 80vh; /* Adjust container height for smaller screens */
+  }
+}
+
+
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+  .homepage-background-video {
+    position: absolute;
+    height: 80%; /* Adjust height for small screens */
+    object-fit: cover;
+    z-index: -1;
+  }
+  .homepage-content {
+    margin-top: -100px;
+
+  }
+  .homepage-content h3{
+    font-size:25px; 
+    width: 600px;
+      }
+
+  .homepage-content p{
+    font-size:15px; 
+    width: 600px;
+      }
+ 
+}
+
+/* For larger tablets and small laptops */
+@media (max-width: 1024px) {
+  .homepage-background-video {
+    position: absolute;
+    height: 80%; /* Adjust height for small screens */
+    object-fit: cover;
+    z-index: -1;
+  }
+  .homepage-content {
+    margin-top: -100px;
+
+  }
+  .homepage-content h3{
+    font-size:35px; 
+    width: 600px;
+      }
+
+  .homepage-content p{
+    font-size:20px; 
+    width: 600px;
+      }
+}
+
+
+
+
+
+
+
+/* For Desktop Screens */
+@media (min-width: 1025px) {
+  .homepage-background-video {
+    position: absolute;
+    height: 90%; /* Adjust height for small screens */
+    object-fit: cover;
+    z-index: -1;
+  }
+  .homepage-content {
+    margin-top: -100px;
+
+  }
+  .homepage-content h3{
+    font-size:40px; 
+    width: 600px;
+      }
+
+  .homepage-content p{
+    font-size:28px; 
+
+      }
+}

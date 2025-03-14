@@ -1,0 +1,48 @@
+.vision-section {
+    margin-top: -76px;
+    padding: 50px 20px;
+    background-image: linear-gradient(to right, rgb(255, 219, 237), rgb(134, 102, 121));
+ 
+  }
+  
+  .vision-title {
+    font-size: 2rem;
+    color: #47022d;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .vision-text {
+    font-size: 1.2rem;
+    color: #47022d;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    width:80%;
+    margin-left: 10%;
+ text-align: justify;
+  }
+  
+  .vision-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .icon-item {
+    text-align: center;
+    width: 150px;
+  }
+  
+  .icon-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-item p {
+    font-size: 1rem;
+    color: #3f0e2c;
+  }
