@@ -7,10 +7,11 @@ const FooterPage = () => {
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 <footer class="hero">
         <div class="container flex">
+        <img className='image-footer-logo'    src='https://res.cloudinary.com/dmv2tjzo7/image/upload/v1743407439/sptg6uejtdbcc1ty5aog.png'/>
+   
             <div class="container__about">
-                <h2>About</h2>
-                <p>A young software developer, starting his professional life, learning the most used languages in this
-                    industry, PYTHON, C++, HTML, CSS and JAVASCRIPT.</p>
+             <h6>#13-C, Mosque Street, </h6>
+                <h6>100 Feet Road, M.G. Nagar, Tharamani, Chennai - 600 113</h6>
             </div>
             <div class="container-pages flex">
 

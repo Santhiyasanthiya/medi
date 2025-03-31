@@ -1,23 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-*{
-  padding:0%;
-  margin:0%;
-  box-sizing: border-box;
-}
+
 
 .hero {
   height: auto;
-  background: url("https://img.freepik.com/free-vector/background-gradient-minimalist-design-style_483537-2763.jpg")
+  background: url("https://img.freepik.com/premium-photo/pink-white-gradient-noisy-grain-background-texture-painted-surface-wall-blank-empty-pattern-with_941600-219479.jpg")
     left bottom no-repeat;
-  /* background-color: rgba(0, 0, 0, 0.747); */
-  background-size: cover;
-  background-blend-mode: multiply;
-   /* background-attachment:fixed ;
-    activate when you put in your website (optional)
-  */
-  color: rgb(255, 255, 255);
+ background-size: cover;
+  color: rgb(0, 0, 0);
   padding: 30px 80px 30px 30px;
 }
+
+.image-footer-logo{
+  height: 70px;
+  width: auto;
+}
+
+
+
+
 .hero .container{
   justify-content: space-between;
   flex-wrap: wrap;
