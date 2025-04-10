@@ -27,8 +27,6 @@ const HeaderPage = () => {
       
       <div className="headerPage-container">
 
-      <img className="headerPage-image" src="https://res.cloudinary.com/dmv2tjzo7/image/upload/v1743407439/sptg6uejtdbcc1ty5aog.png" alt="Header Logo" />
-
 
         <nav className={`headerPage-nav-links ${isMenuOpen ? "open" : ""}`}>
           <button onClick={() => scrollToSection("home")}>Home</button>

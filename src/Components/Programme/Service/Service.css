@@ -1,0 +1,115 @@
+
+/* Service container */
+.Services_container {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    max-width: 800px;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  /* Heading */
+  .Our_Services_heading {
+    font-size: 2rem;
+    color: #5a080c;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    animation: slideDown 1s ease-in-out;
+  }
+  
+  /* Underline effect */
+  .Our_Services_heading::after {
+    content: "";
+    width: 180px;
+    height: 4px;
+    background: #6d0c19;
+    display: block;
+    margin: 8px auto;
+    border-radius: 2px;
+  }
+  
+  /* Paragraph styling */
+  .Our_Services_para p {
+    font-size: 1.3rem;
+    color: #000000;
+    background: #f7b4e8;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: 0.3s ease-in-out;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .Our_Services_para p:hover {
+    background: #580303;
+    color: white;
+    transform: scale(1.05);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Services_container {
+      padding: 30px;
+      max-width: 90%;
+    }
+    .Our_Services_heading {
+      font-size: 1.8rem;
+    }
+    .Our_Services_para p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Services_container {
+      padding: 20px;
+    }
+    .Our_Services_heading {
+      font-size: 1.6rem;
+    }
+    .Our_Services_para p {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+  }

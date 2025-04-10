@@ -1,6 +1,6 @@
 /* General Styles */
 .headerPage {
-  background-image: linear-gradient(to right, rgb(255, 219, 237), rgb(134, 102, 121));
+  background-image: linear-gradient(to right, rgb(252, 182, 217), rgb(240, 166, 210));
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   position: sticky;
@@ -14,30 +14,16 @@
   justify-content: space-between;
 }
 
-@keyframes zoomIn {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.headerPage-image {
-  height: 70px;
-  animation: zoomIn 2s ease-in-out;
-}
-
 
 
 /* Navigation Links */
 .headerPage-nav-links {
   display: flex;
-  gap: 40px;
+  gap: 100px;
   padding: 20px;
+  margin-left: 240px;
   list-style: none;
+
 }
 
 .headerPage-nav-links button {
@@ -45,7 +31,7 @@
   border: none;
   text-decoration: none;
   color: #3c011c;
-  font-size: 1.02rem;
+  font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
   transition: color 0.3s, transform 0.3s;
@@ -54,7 +40,9 @@
 .headerPage-nav-links button:hover {
   color: #47022d;
   transform: scale(1.2); /* Zoom in effect */
+  text-shadow: 2px 2px 5px rgba(71, 2, 45, 0.5); /* Soft shadow effect */
 }
+
 
 /* Menu Icon for Mobile and Tablet Views */
 .headerPagemenu-icon {

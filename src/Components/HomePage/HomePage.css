@@ -1,46 +1,42 @@
-/* General Styles */
 .home-container {
   position: relative;
-  height: 110vh;
   width: 100%;
+  height: 80vh;
   overflow: hidden;
-  margin-top: -80px;
 }
 
 .homepage-background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
 }
 
-/* Animated Text Styles */
-.homepage-text {
+.logo-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
-  color: rgb(75, 3, 6);
-  font-family: 'Times New Roman', Times, serif;
-  opacity: 0;
-  animation: fadeInOut 3s infinite;
+  text-align: center;
 }
 
-@keyframes fadeInOut {
+@keyframes zoomIn {
   0% {
+    transform: scale(0.5);
     opacity: 0;
-    transform: translate(-50%, -55%);
-  }
-  50% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
   }
   100% {
-    opacity: 0;
-    transform: translate(-50%, -45%);
+    transform: scale(1.5);
+    opacity: 1;
   }
+}
+
+.headerPage-image {
+  width: 320px;
+  margin-top: -180px;
+  height: auto;
+  animation: zoomIn 6.5s ease-in-out; /* Zoom animation */
 }

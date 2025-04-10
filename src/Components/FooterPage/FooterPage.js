@@ -39,7 +39,7 @@ const FooterPage = () => {
         </div>
         <div class="line__separete"></div>
         <div class="by flex">
-            <p>Copyright © 2022 All Rights Reserved by Brayan Ospina.</p>
+            <p>Copyright © 2022 All Rights Reserved by Alphaingen</p>
             <div class="icons">
                 <a href="https://t.co/VBNNTjtw3F" class="icon1 icon--instagram">
                     <i class="ri-instagram-line"></i>

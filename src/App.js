@@ -8,16 +8,32 @@ import InformPage from "./Components/InfoTechPage/InformPage";
 import FooterPage from "./Components/FooterPage/FooterPage";
 import ContactPage from "./Components/Contactpage/ContactPage";
 import Programme from "./Components/Programme/Programme";
+import PowerPractice from "./Components/PowerPractice/PowerPractice";
 
 
 
 const App = () => {
   return (
     <div>
-      <Header />
-      <div id="home">
+   
+      <div>
         <HomePage />
       </div>
+
+      <div>
+      <Header />
+      </div>
+
+      <div  id="home">
+      <PowerPractice/>
+      </div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
       <div id="programme">
         <Programme />
       </div>
