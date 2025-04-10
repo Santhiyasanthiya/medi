@@ -11,12 +11,12 @@
   
   /* Heading */
   .Our_Services_heading {
-    font-size: 2rem;
+    font-size: 1.1rem;
     color: #5a080c;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     position: relative;
     animation: slideDown 1s ease-in-out;
   }
@@ -34,7 +34,7 @@
   
   /* Paragraph styling */
   .Our_Services_para p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #000000;
     background: #f7b4e8;
     font-family: 'Times New Roman', Times, serif;

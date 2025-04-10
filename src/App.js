@@ -9,6 +9,8 @@ import FooterPage from "./Components/FooterPage/FooterPage";
 import ContactPage from "./Components/Contactpage/ContactPage";
 import Programme from "./Components/Programme/Programme";
 import PowerPractice from "./Components/PowerPractice/PowerPractice";
+import OurTraining from "./Components/OurTraining/OurTraining";
+import WhyAlphaingen from "./Components/WhyAlphaingen/WhyAlphaingen";
 
 
 
@@ -37,6 +39,16 @@ const App = () => {
       <div id="programme">
         <Programme />
       </div>
+
+
+      <br/>
+      <br/>
+<OurTraining/>
+<br/>
+<br/>
+<WhyAlphaingen/>
+
+
       <div id="healthcare">
   <HealthCare/>
       </div>

@@ -1,0 +1,56 @@
+.training-container {
+    padding: 40px 20px;
+    /* background: #fdfdfd; */
+  }
+  
+  .text-section h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: calc(var(--i) * 0.3s);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .text-section h2:nth-child(1) { --i: 1; }
+  .text-section h2:nth-child(2) { --i: 2; }
+  .text-section h2:nth-child(3) { --i: 3; }
+  .text-section h2:nth-child(4) { --i: 4; }
+  .text-section h2:nth-child(5) { --i: 5; }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-img {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    opacity: 0;
+    animation: fadeImage 2s ease-in forwards;
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes fadeImage {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .text-section h2 {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+  
+    .image-section {
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+  

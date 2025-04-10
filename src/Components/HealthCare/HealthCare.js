@@ -6,7 +6,7 @@ const HealthCare = () => {
   return (
     <div className="healthcare-container">
      <div className="healthcare-title">
-     <h2 className=" mt-5">Health Care</h2>
+     <h2 className=" mt-5 whyalpha-heading programme-page-main-heading">   Why Choose Alphaingen?</h2>
      </div>
       <motion.div 
         className="parallax-fixed parallax1"
@@ -25,38 +25,38 @@ const HealthCare = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
       >
-        <h1>HealthCare</h1>
+       <h2 className="whyalpha-subheading">Healthcare Providers</h2>
         <motion.p
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          Medical Coding Certification Program: Master core coding concepts with in-depth instruction.
-          Prepare for industry-recognized certifications.
-        </motion.p>
+
+     
+Healthcare providers have seen a significant improvement in revenue cycles due to reduced claim denials.
+          
+      
+      </motion.p>
         <motion.p
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          Advanced Medical Coding and Auditing: Dive deeper into specialty coding and compliance auditing.
-          Gain expertise in areas like oncology, orthopedics, and cardiovascular coding.
+       Fewer claim denials mean faster payments, improving cash flow and financial stability for healthcare providers
         </motion.p>
         <motion.p
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          Medical Billing and Reimbursement Training: Learn about insurance claims processing,
-          billing guidelines, and payer regulations.
+    Our HIPAA-compliant workflow ensures secure handling of patient data while enhancing operational efficiency for healthcare providers
         </motion.p>
         <motion.p
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.9 }}
         >
-          Customized Corporate Training: Upskill your workforce with tailored training solutions for hospitals,
-          clinics, and healthcare organizations.
+       Certified coders manage your revenue cycle with precision, ensuring accurate claims and maximum reimbursements
         </motion.p>
       </motion.div>
 

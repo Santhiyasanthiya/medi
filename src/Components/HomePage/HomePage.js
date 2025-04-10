@@ -1,5 +1,6 @@
 import React from "react";
 import "./HomePage.css";
+import homelogo from "../../Assets/HeaderImage/homelogo.png"
 
 const HomePage = () => {
   return (
@@ -17,7 +18,7 @@ const HomePage = () => {
       <div className="logo-container">
         <img
           className="headerPage-image"
-          src="https://res.cloudinary.com/dmv2tjzo7/image/upload/v1743407439/sptg6uejtdbcc1ty5aog.png"
+          src={homelogo}
           alt="Header Logo"
         />
       </div>
