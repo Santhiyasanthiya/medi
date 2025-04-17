@@ -1,51 +1,40 @@
-.healthcare-container {
-  text-align: center;
-  overflow-x: hidden;
-  position: relative;
-}
-.healthcare-title{
-  font-size: 24px;
-  font-weight: bold;
-  color: #520039;
-  background-color: transparent;
-}
-
-/* Fixed Parallax Background */
-.parallax-fixed {
-  height: 300px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: -1;
-}
-
-.parallax1 {
-  background-image: url("https://assets.ultimatemedical.edu/transform/4f90543b-91d2-458a-b866-1e9e1d817421/MBC-start-a-career");
-}
-
-.parallax2 {
-  background-image: url("https://media.licdn.com/dms/image/v2/D4D12AQEmg8DbtJkNXA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1698787689876?e=2147483647&v=beta&t=LqbDkMpJnNl16AHAtjYEAkuRo8UsE_oLjprI_A-aVPk");
-}
-.healthcare-total-paratag{
-  background-image: linear-gradient(to right, rgb(255, 219, 237), rgb(134, 102, 121));
-}
-/* Content Box */
-.healthcare-content {
-  max-width: 80%;
-  margin: auto;
-  padding: 20px;
-  border-radius: 10px;
-  position: relative;
-  z-index: 1;
+.Healthcare_Providers {
+  font-family: 'Times New Roman', Times, serif;
   text-align: justify;
+  font-size: 20px;
+  margin-top: 50px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .healthcare-content {
-    max-width: 95%;
-  }
+.whyalpha-subheading {
+  color: rgb(99, 10, 10);
+  text-align: center;
+}
+
+.Healthcare_Providers_image {
+  width: 90%;
+  height: auto;
+  border-radius: 25px;
+}
+
+
+.student-image{
+margin-top: 20px;
+width: 100%;
+border-radius: 15px;
+
+}
+.student-text-container{
+  margin-top: 10px;
+}
+.for_student{
+  color: rgb(99, 2, 2);
+  text-align: center;
+}
+.student-text{
+  font-size: 18px;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+}
+.second-row{
+  margin-top: 100px;
 }

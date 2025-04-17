@@ -1,70 +1,63 @@
-.contact-page {
-    font-family: "Arial", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-image: url(https://images.unsplash.com/photo-1598266628171-7e00f76a27a8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFyb29ufGVufDB8fDB8fHww);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.footer_popup-content {
+  padding: 20px;
+}
+
+.footer_popup-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #720000;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer_popup-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.footer_popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer_popup-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_popup-label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.footer_popup-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer_popup-submit-btn {
+  background-color: #440303;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer_popup-submit-btn:hover {
+  background-color: #ec7ff0;
+}
+
+.footer_popup-message {
   
-  .contact-page-container {
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .contact-page-heading{
-    color: #ffffff;
-  }
-  
-  .form-group {
-    margin-bottom: 25px;
-    position: relative;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #ffffff;
-  }
-  
-  input,
-  textarea {
-    width: calc(100% - 20px);
-    max-width: calc(100% - 20px);
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  input:focus,
-  textarea:focus {
-    outline: none;
-    background-color: #e0e0e0;
-  }
-  
-  .contact-page-button{
-    background-color: rgb(179, 119, 42);
-    color: white;
-    padding: 12px 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-  
-  .contact-page-button:hover {
-    background: linear-gradient(to right, #e74c4f, rgb(211, 134, 33));
-    transition: 1s ease;
-  }
-  
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+}

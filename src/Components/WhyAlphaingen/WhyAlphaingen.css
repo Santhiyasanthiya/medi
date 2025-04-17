@@ -2,9 +2,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-  
     padding: 20px;
-    background-image: linear-gradient(to right, rgb(255, 219, 237), rgb(134, 102, 121)); 
     animation: fadeIn 2s ease-in-out;
   }
   
@@ -18,16 +16,12 @@
   
   }
   
- 
-  
   .inform-text-container {
     margin-top: 20px;
-
     text-align: left;
     font-size: 1.2em;
     line-height: 1.5;
     margin-left: 250px;
-    background-color: rgb(196, 157, 197);
   }
   
   @keyframes fadeIn {

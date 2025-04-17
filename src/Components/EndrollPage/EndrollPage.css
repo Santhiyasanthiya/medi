@@ -1,0 +1,30 @@
+.endroll-page-main-heading{
+font-family: 'Times New Roman', Times, serif;
+font-size: 2.5rem;
+text-align: center;
+background: linear-gradient(90deg, #c25180, #410a13, #ff6f61);
+-webkit-background-clip: text;
+
+-webkit-text-fill-color: transparent;
+text-shadow: 2px 2px 5px rgb(43, 1, 8);
+animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+0% {
+
+  transform: translateY(-10px);
+}
+100% {
+
+  transform: translateY(0);
+}
+}
+
+.endroll_content{
+color: #410a13;
+font-weight: 500;
+font-size: 18px;
+text-align: center;
+
+}

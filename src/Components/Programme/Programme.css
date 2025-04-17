@@ -1,7 +1,5 @@
 .programme-container {
   padding: 40px 20px;
-  background: linear-gradient(45deg, #f1d1f5, #e8aee0, #f1d1f5);
-  background-size: 200% 200%;
   animation: spinBackground 10s linear infinite;
   display: flex;
   flex-direction: column;
@@ -11,8 +9,10 @@
   width: 100vw;
   position: relative;
   margin-top: -80px;
-}
+  z-index: 1;
 
+
+}
 /* Background animation */
 @keyframes spinBackground {
   0% {
@@ -32,7 +32,6 @@
   text-align: center;
   background: linear-gradient(90deg, #c25180, #410a13, #ff6f61);
   -webkit-background-clip: text;
-
   -webkit-text-fill-color: transparent;
   text-shadow: 2px 2px 5px rgb(43, 1, 8);
   animation: fadeIn 2s ease-in-out;
@@ -68,8 +67,7 @@
   color: #000000;
   font-family: 'ChristmasTwinkle';
   border-radius: 5px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  opacity: 0;
+ opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 1.5s ease-out forwards;
   flex: 1; 

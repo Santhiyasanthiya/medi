@@ -1,36 +1,58 @@
-import React from 'react';
-import "./ContactaPage.css"
+import React, { useState } from 'react';
+import "./ContactaPage.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const ContactPage = () => {
+const ContactPage = ({ closePopup }) => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    toast.success("Submitted successfully");
+    setSubmitted(true);
+
+    // Close popup after 2 seconds
+    setTimeout(() => {
+      closePopup();
+    }, 2000);
+  };
+
   return (
-    <div>
-      <div className='contact-page'>
-<div className="contact-page-container">
-  <h1 className='contact-page-heading'>Get In Touch</h1>
-  <form action="" method="post"/>
-    <div className="form-group">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required/>
-    </div>
-    <div className="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required/>
-    </div>
-    <div className="form-group">
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" name="subject" required />
-    </div>
-    <div className="form-group">
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-    </div>
-    <div className="form-group">
-      <button className='contact-page-button' type="submit">Submit</button>
-    </div>
-</div>
-</div>
+    <div className="footer_popup-content">
+      <h2 className="footer_popup-title">Contact Us</h2>
+      <p className="footer_popup-text">You can reach us at hello@alphaingen.com or fill out the form below.</p>
+
+      <form className="footer_popup-form" onSubmit={handleSubmit}>
+        <div className="footer_popup-form-group">
+          <label className="footer_popup-label">Username</label>
+          <input type="text" className="footer_popup-input" placeholder="Enter your name" required />
+        </div>
+
+        <div className="footer_popup-form-group">
+          <label className="footer_popup-label">Email ID</label>
+          <input type="email" className="footer_popup-input" placeholder="Enter your email" required />
+        </div>
+
+        <div className="footer_popup-form-group">
+          <label className="footer_popup-label">Phone Number</label>
+          <input type="tel" className="footer_popup-input" placeholder="Enter your phone number" required />
+        </div>
+
+        <div className="footer_popup-form-group">
+          <label className="footer_popup-label">Subject</label>
+          <input type="text" className="footer_popup-input" placeholder="Enter the subject" required />
+        </div>
+
+        <button type="submit" className="footer_popup-submit-btn">Submit</button>
+      </form>
+
+      {submitted && (
+        <p className="footer_popup-message">We will get back soon 😊</p>
+      )}
+
+      <ToastContainer position="bottom-center" />
     </div>
   );
-}
+};
 
 export default ContactPage;

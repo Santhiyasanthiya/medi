@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./Components/HeaderPage/HeaderPage";
 import HomePage from "./Components/HomePage/HomePage";
-import Vision from "./Components/VisionPage/VisionPage";
 import AboutPage from "./Components/AboutPage/AboutPage";
 import HealthCare from "./Components/HealthCare/HealthCare";
 import InformPage from "./Components/InfoTechPage/InformPage";
@@ -10,65 +9,67 @@ import ContactPage from "./Components/Contactpage/ContactPage";
 import Programme from "./Components/Programme/Programme";
 import PowerPractice from "./Components/PowerPractice/PowerPractice";
 import OurTraining from "./Components/OurTraining/OurTraining";
+import useGoogleAnalytics from "./useGoogleAnalytics";
 import WhyAlphaingen from "./Components/WhyAlphaingen/WhyAlphaingen";
-
-
+import EndrollPage from "./Components/EndrollPage/EndrollPage";
+import { Route, Router, Routes } from "react-router-dom";
 
 const App = () => {
+  useGoogleAnalytics();
+  const [showHeader, setShowHeader] = useState(false);
+
+ 
+
+
+
   return (
     <div>
-   
-      <div>
+      <div id="home">
         <HomePage />
       </div>
 
+   <Header />
+
       <div>
-      <Header />
+        <PowerPractice />
       </div>
 
-      <div  id="home">
-      <PowerPractice/>
-      </div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+      <br /><br /><br /><br /><br /><br />
 
       <div id="programme">
         <Programme />
       </div>
 
+      <br /><br />
+      <OurTraining />
+      <br /><br />
 
-      <br/>
-      <br/>
-<OurTraining/>
-<br/>
-<br/>
-<WhyAlphaingen/>
-
-
-      <div id="healthcare">
-  <HealthCare/>
+      <div id="whychoose">
+        <HealthCare />
       </div>
+
       <div id="infotech">
-     <InformPage/>
+        <InformPage />
       </div>
-      <div id="ai-ar">
-        <h2>AI & AR Section</h2>
-        <p>This is the AI & AR section content.</p>
-      </div>
-      <div id="about">
-      <AboutPage/>
-      </div>
-      <div id="contact">
-        <ContactPage/>
+<br/>
+<br/>
+<br/>
+      <div id="endroll">
+        <EndrollPage />
       </div>
 
- <div>
- <FooterPage />
- </div>
+      <div>
+        <FooterPage />
+      </div>
+
+
+
+ 
+      <Routes >
+     
+        <Route path="/contact" element={<ContactPage />} /> 
+      </Routes>
+
     </div>
   );
 };

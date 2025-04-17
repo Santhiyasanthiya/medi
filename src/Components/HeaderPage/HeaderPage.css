@@ -1,7 +1,7 @@
 /* General Styles */
 .headerPage {
   background-image: linear-gradient(to right, rgb(252, 182, 217), rgb(240, 166, 210));
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
@@ -31,9 +31,10 @@
   border: none;
   text-decoration: none;
   color: #3c011c;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
   transition: color 0.3s, transform 0.3s;
 }
 

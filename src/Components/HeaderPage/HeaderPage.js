@@ -30,12 +30,11 @@ const HeaderPage = () => {
 
         <nav className={`headerPage-nav-links ${isMenuOpen ? "open" : ""}`}>
           <button onClick={() => scrollToSection("home")}>Home</button>
-          <button onClick={() => scrollToSection("programme")}>Programme</button>
-          <button onClick={() => scrollToSection("healthcare")}>Testimonial</button>
-          {/* <button onClick={() => scrollToSection("infotech")}>InfoTech</button> */}
-          {/* <button onClick={() => scrollToSection("ai-ar")}>AI & AR</button> */}
-          <button onClick={() => scrollToSection("about")}>About</button>
-          <button onClick={() => scrollToSection("contact")}>Endroll</button>
+          <button onClick={() => scrollToSection("programme")}>Service</button>
+          <button onClick={() => scrollToSection("programme")}>Learning</button>
+       
+          <button onClick={() => scrollToSection("whychoose")}>Why Alphaingen</button>
+          <button onClick={() => scrollToSection("endroll")}>Endroll</button>
         </nav>
         <div className="headerPagemenu-icon" onClick={toggleMenu}>
           {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
