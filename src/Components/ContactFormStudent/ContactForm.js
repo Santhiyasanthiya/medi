@@ -25,7 +25,7 @@ const ContactForm = () => {
       await axios.post('https://miracle-backend-three.vercel.app/api/student-contact', formData);
       setSubmitted(true);
       setTimeout(() => {
-        window.location.href = "http://localhost:3000";
+        window.location.href = "https://medi-cpcawshjx-santhiyasanthiyas-projects.vercel.app";
       }, 2000);
     } catch (error) {
       console.error("Error submitting form:", error);
