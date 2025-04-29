@@ -1,97 +1,102 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 import './ContactForm.css';
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    course: '',
+    batch: '',
+    source: '',
+    description: ''
+  });
+
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const form = e.target;
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-      method: form.method,
-      body: formData,
-      mode: 'no-cors'
-    })
-      .then(() => {
-        setSubmitted(true);
-      })
-      .catch((error) => {
-        console.error('Form submission error:', error);
-      });
+  const handleChange = (e) => {
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  useEffect(() => {
-    if (submitted) {
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('https://miracle-backend-three.vercel.app/api/student-contact', formData);
+      setSubmitted(true);
       setTimeout(() => {
-        window.location.href = "https://www.alphaingen.com";
-      }, 2000); // Redirect after 2 seconds
+        window.location.href = "http://localhost:3000";
+      }, 2000);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Something went wrong. Please try again.");
     }
-  }, [submitted]);
+  };
 
   return (
     <div className="student_contact_wrapper">
       {submitted ? (
         <div className="student_contact_success">
-          <h2>Thank you! We received your details we will get back soon</h2>
-      
+          <h2>Thank you! We received your details and will get back to you soon.</h2>
         </div>
       ) : (
-        <form
-        className="student_contact_form"
-        action="https://crm.zoho.in/crm/WebToLeadForm"
-        name="WebToLeads896376000000420790"
-        method="POST"
-        acceptCharset="UTF-8"
-        onSubmit={handleSubmit}
-      >
-      
-
-      
-          {/* Hidden Inputs */}
-          <input type="hidden" name="xnQsjsdp" value="0615834f8daa7625cbc97a778b9a26316f6196045d288c13fd51827065c0fa5f" />
-          <input type="hidden" name="zc_gad" id="zc_gad" value="" />
-          <input type="hidden" name="xmIwtLD" value="fd49050ead9867e053a27d590ec19cf82690d38e1b517c62e5a7eb81e2747f17fcded59be414d014c1f785c8e1ad9db2" />
-          <input type="hidden" name="actionType" value="TGVhZHM=" />
-          <input type="hidden" name="returnURL" value="https://www.alphaingen.com" />
-
-
+        <form onSubmit={handleFormSubmit}>
           <div className="student_contact_field">
-            <label htmlFor="First_Name">First Name</label>
-            <input type="text" id="First_Name" name="First Name" maxLength="40" />
-          </div>
-
-      
-
-          <div className="student_contact_field">
-            <label htmlFor="Mobile">Mobile</label>
-            <input type="text" id="Mobile" name="Mobile" maxLength="30" />
+            <label htmlFor="name">First Name</label>
+            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
           </div>
 
           <div className="student_contact_field">
-            <label htmlFor="Email">Email</label>
-            <input type="email" id="Email" name="Email" maxLength="100" />
+            <label htmlFor="phone">Mobile</label>
+            <input type="text" id="phone" name="phone" value={formData.phone} onChange={handleChange} required />
           </div>
 
           <div className="student_contact_field">
-            <label htmlFor="LEADCF2">Interested Course</label>
-            <select name="LEADCF2" id="LEADCF2">
-              <option value="-None-">-None-</option>
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
+          </div>
+
+          <div className="student_contact_field">
+            <label htmlFor="course">Interested Course</label>
+            <select name="course" id="course" value={formData.course} onChange={handleChange} required>
+              <option value="">-None-</option>
               <option value="CPC">CPC</option>
               <option value="CCS">CCS</option>
               <option value="CRC">CRC</option>
               <option value="Basic Medical Coding Training">Basic Medical Coding Training</option>
               <option value="Advanced Medical Coding Training">Advanced Medical Coding Training</option>
-              <option value="Specialty Medical Coding Training">Specialty Medical Coding Training</option>
+              <option value="Specialty Training">Specialty Training</option>
             </select>
           </div>
 
           <div className="student_contact_field">
-            <button type="submit" className="student_contact_button">
-              Submit
-            </button>
+            <label htmlFor="batch">Preferred Batch</label>
+            <select name="batch" id="batch" value={formData.batch} onChange={handleChange}>
+              <option value="">-None-</option>
+              <option value="Morning">Morning</option>
+              <option value="Evening">Evening</option>
+              <option value="Weekend">Weekend</option>
+            </select>
+          </div>
+
+          <div className="student_contact_field">
+            <label htmlFor="source">Source of Inquiry</label>
+            <select name="source" id="source" value={formData.source} onChange={handleChange}>
+              <option value="">-None-</option>
+              <option value="Referral">Referral</option>
+              <option value="Social Media">Social Media</option>
+              <option value="Walk-in">Walk-in</option>
+              <option value="Website">Website</option>
+            </select>
+          </div>
+
+          <div className="student_contact_field">
+            <label htmlFor="description">Description</label>
+            <textarea name="description" id="description" value={formData.description} onChange={handleChange}></textarea>
+          </div>
+
+          <div className="student_contact_field">
+            <button type="submit" className="student_contact_button">Submit</button>
           </div>
         </form>
       )}

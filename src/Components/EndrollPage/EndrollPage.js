@@ -49,6 +49,7 @@ const EndrollPage = () => {
 <div className='col-lg-6 col-md-12 text-section mt-2'>
 <p className='endroll_content'>For Student</p>
 <ContactForm/>
+<br/>
 </div>
 
 <div className='col-lg-6 col-md-12 text-section mt-2'>

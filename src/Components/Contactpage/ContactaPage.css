@@ -42,7 +42,8 @@
 }
 
 .footer_popup-submit-btn {
-  background-color: #440303;
+  background: linear-gradient(to right, #6d1414, #da98e7);
+  
   color: white;
   padding: 12px;
   font-weight: bold;
@@ -54,7 +55,7 @@
 }
 
 .footer_popup-submit-btn:hover {
-  background-color: #660000;
+  background: linear-gradient(to right,#da98e7, #6d1414);
 }
 
 .footer_popup-error {
