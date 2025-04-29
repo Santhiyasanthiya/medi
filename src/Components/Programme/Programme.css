@@ -203,6 +203,152 @@
 
 
 
+/* 1200px and below - Large screens */
+@media (max-width: 1200px) {
+  .programme-page-column,
+  .programme-page-column-second {
+    min-width: 300px;
+    height: auto;
+  }
+
+  .programme-container {
+    padding: 30px 15px;
+  }
+}
+
+/* 992px and below - Medium desktops/laptops */
+@media (max-width: 992px) {
+  .programme-page-column,
+  .programme-page-column-second {
+    flex: 1 1 45%;
+    margin: 10px;
+  }
+
+  .programme-page-para {
+    font-size: 20px;
+    margin-top: 80px;
+  }
+
+  .popup-content {
+    width: 90%;
+  }
+}
+
+/* 768px and below - Tablets */
+@media (max-width: 768px) {
+  .programme-page-column,
+  .programme-page-column-second {
+    flex: 1 1 100%;
+    min-width: 100%;
+    height: auto;
+  }
+
+  .programme-page-main-heading {
+    font-size: 2.2rem;
+  }
+
+  .programme-page-para {
+    font-size: 18px;
+    margin-top: 60px;
+  }
+
+  .learning-button,
+  .service-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+/* 576px and below - Mobile phones */
+@media (max-width: 576px) {
+  .programme-page-main-heading {
+    font-size: 1.8rem;
+  }
+
+  .programme-page-para {
+    font-size: 16px;
+  }
+
+  .popup-content {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .programme-container {
+    padding: 20px 10px;
+  }
+
+  .learning-button,
+  .service-button {
+    font-size: 15px;
+    padding: 8px 14px;
+  }
+}
+
+/* 425px and below - Small phones */
+@media (max-width: 425px) {
+  .programme-page-main-heading {
+    font-size: 1.6rem;
+  }
+
+  .programme-page-para {
+    font-size: 15px;
+  }
+
+  .programme-page-column,
+  .programme-page-column-second {
+    margin: 10px 0;
+  }
+
+  .learning-button,
+  .service-button {
+    font-size: 14px;
+  }
+}
+
+/* 375px and below - Very small phones */
+@media (max-width: 375px) {
+  .programme-page-main-heading {
+    font-size: 1.4rem;
+  }
+
+  .programme-page-para {
+    font-size: 14px;
+    margin-top: 50px;
+  }
+
+  .popup-content {
+    padding: 12px;
+  }
+
+  .learning-button,
+  .service-button {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+/* 300px and below - Mini devices */
+@media (max-width: 300px) {
+  .programme-page-main-heading {
+    font-size: 1.2rem;
+  }
+
+  .programme-page-para {
+    font-size: 13px;
+  }
+
+  .learning-button,
+  .service-button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .popup-content {
+    width: 95%;
+    font-size: 14px;
+  }
+}
 
 
 

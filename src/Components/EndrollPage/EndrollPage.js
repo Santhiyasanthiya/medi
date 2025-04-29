@@ -1,8 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './EndrollPage.css';
 import ContactForm from '../ContactFormStudent/ContactForm';
+import ContactPage from '../Contactpage/ContactPage';
 
 const EndrollPage = () => {
+
+  const images = [
+    "https://i.pinimg.com/736x/72/8d/fe/728dfeff858ccdb8868c9f6ef45124da.jpg",
+    "https://img.freepik.com/premium-photo/pink-ribbons-stethoscope-pastel-background-symbol-womens-breast-cancer-awareness_53476-6136.jpg"
+  ];
+  
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 5000); // Every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+
   return (
     <div className='container'>
    
@@ -12,12 +30,19 @@ const EndrollPage = () => {
         <h1 className='endroll-page-main-heading'>ENDROLL NOW</h1>
         <div className='endroll_content'>
           <h3 className='whyalpha-subheading'>Who Can Endroll ?</h3>
-          <p>Life science graduates</p>
+          <div
+      className="endroll_content-para"
+      style={{ backgroundImage: `url(${images[currentImage]})` }}
+    >
+  <p>Life science graduates</p>
           <p>Healthcare professionals</p>
           <p>Freshers looking for a career in healthcare administration</p>
           <p>Working professionals aiming for a career shift</p>
           <p>Anyone interested in medical coding & billing</p>
-        </div>
+       
+  </div>
+  
+   </div>
 
 
 <div className='row'>
@@ -27,8 +52,8 @@ const EndrollPage = () => {
 </div>
 
 <div className='col-lg-6 col-md-12 text-section mt-2'>
-<p className='endroll_content'>Client</p>
-<ContactForm/>
+<p className='endroll_content'>For Client</p>
+<ContactPage/>
 </div>
 </div>
 

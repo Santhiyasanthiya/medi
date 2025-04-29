@@ -1,25 +1,22 @@
 .footer_popup-content {
-  padding: 20px;
+  padding: 10px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.footer_popup-title {
-  font-size: 28px;
-  margin-bottom: 10px;
-  color: #720000;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-}
+
 
 .footer_popup-text {
   font-size: 16px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   color: #666;
+  text-align: center;
 }
 
 .footer_popup-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 .footer_popup-form-group {
@@ -28,15 +25,20 @@
 }
 
 .footer_popup-label {
-  font-size: 14px;
-  margin-bottom: 5px;
-  color: #444;
+
+  font-size: 18px;
+  margin-bottom: 2px;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.footer_popup-input {
-  padding: 10px;
+.footer_popup-input,
+.footer_popup-form textarea {
+  padding: 8px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  resize: vertical;
 }
 
 .footer_popup-submit-btn {
@@ -44,6 +46,7 @@
   color: white;
   padding: 12px;
   font-weight: bold;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -51,13 +54,88 @@
 }
 
 .footer_popup-submit-btn:hover {
-  background-color: #ec7ff0;
+  background-color: #660000;
 }
 
-.footer_popup-message {
-  
-  color: green;
-  font-weight: bold;
-  text-align: center;
-  font-size: 1rem;
+.footer_popup-error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  font-family: Arial, sans-serif;
+}
+
+/* ============================
+   📱 Mobile (iPhone SE, small phones)
+   ============================ */
+@media (max-width: 375px) {
+  .footer_popup-title {
+    font-size: 20px;
+  }
+
+  .footer_popup-label {
+    font-size: 14px;
+  }
+
+  .footer_popup-input,
+  .footer_popup-form textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .footer_popup-submit-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* ============================
+   📱 Medium phones (up to 576px)
+   ============================ */
+@media (max-width: 576px) {
+  .footer_popup-content {
+    padding: 10px;
+  }
+
+  .footer_popup-title {
+    font-size: 22px;
+  }
+
+  .footer_popup-label {
+    font-size: 16px;
+  }
+}
+
+/* ============================
+   📱 Tablets (iPad Mini, Galaxy Tab)
+   ============================ */
+@media (min-width: 577px) and (max-width: 768px) {
+  .footer_popup-title {
+    font-size: 24px;
+  }
+
+  .footer_popup-input,
+  .footer_popup-form textarea {
+    font-size: 15px;
+  }
+
+  .footer_popup-submit-btn {
+    font-size: 15px;
+  }
+}
+
+/* ============================
+   💻 Desktops & Laptops (large)
+   ============================ */
+@media (min-width: 1024px) {
+  .footer_popup-content {
+    max-width: 700px;
+  }
+
+  .footer_popup-title {
+    font-size: 30px;
+  }
+
+  .footer_popup-submit-btn {
+    padding: 14px;
+  }
 }

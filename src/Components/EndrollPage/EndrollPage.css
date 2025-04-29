@@ -1,30 +1,91 @@
-.endroll-page-main-heading{
-font-family: 'Times New Roman', Times, serif;
-font-size: 2.5rem;
-text-align: center;
-background: linear-gradient(90deg, #c25180, #410a13, #ff6f61);
--webkit-background-clip: text;
-
--webkit-text-fill-color: transparent;
-text-shadow: 2px 2px 5px rgb(43, 1, 8);
-animation: fadeIn 2s ease-in-out;
+.endroll-page-main-heading {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  text-align: center;
+  background: linear-gradient(90deg, #c25180, #410a13, #ff6f61);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgb(43, 1, 8);
+  animation: fadeIn 2s ease-in-out;
 }
 
 @keyframes fadeIn {
-0% {
-
-  transform: translateY(-10px);
-}
-100% {
-
-  transform: translateY(0);
-}
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.endroll_content{
-color: #410a13;
-font-weight: 500;
-font-size: 18px;
-text-align: center;
+.endroll_content {
+  color: #410a13;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 20px 0;
+}
 
+.endroll_content-para {
+  background: url("https://i.pinimg.com/736x/72/8d/fe/728dfeff858ccdb8868c9f6ef45124da.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  color: #410a13;
+  font-size: 30px !important;
+  font-family: 'Times New Roman', Times, serif;
+  transition: background-image 1s ease-in-out;
+}
+
+.endroll_content-para:hover {
+  background-image: url("https://img.freepik.com/premium-photo/pink-ribbons-stethoscope-pastel-background-symbol-womens-breast-cancer-awareness_53476-6136.jpg");
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .endroll-page-main-heading {
+    font-size: 2rem; /* Slightly smaller for tablets and smaller desktops */
+  }
+
+  .endroll_content {
+    font-size: 18px; /* Adjust font size for medium screens */
+  }
+
+  .endroll_content-para {
+    font-size: 28px !important; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .endroll-page-main-heading {
+    font-size: 1.8rem; /* Smaller font size for mobile screens */
+  }
+
+  .endroll_content {
+    font-size: 16px; /* Slightly smaller font for mobile */
+    margin: 15px 0; /* Adjust margin for mobile screens */
+  }
+
+  .endroll_content-para {
+    font-size: 25px !important; /* Adjust font size for mobile */
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .endroll-page-main-heading {
+    font-size: 1.5rem; /* Even smaller font size for very small screens */
+  }
+
+  .endroll_content {
+    font-size: 14px; /* Adjust font size further for very small screens */
+    margin: 10px 0; /* Reduce margin for very small screens */
+  }
+
+  .endroll_content-para {
+    font-size: 22px !important; /* Smaller font size for very small screens */
+    padding: 10px; /* Further reduce padding for small screens */
+  }
 }

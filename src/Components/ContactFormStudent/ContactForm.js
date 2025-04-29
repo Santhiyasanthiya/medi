@@ -35,18 +35,21 @@ const ContactForm = () => {
     <div className="student_contact_wrapper">
       {submitted ? (
         <div className="student_contact_success">
-          <h2>Thank you! We received your details</h2>
-         <p>we will get back soon</p>
+          <h2>Thank you! We received your details we will get back soon</h2>
+      
         </div>
       ) : (
         <form
-          className="student_contact_form"
-          action="https://crm.zoho.in/crm/WebToLeadForm"
-          name="WebToLeads896376000000420790"
-          method="POST"
-          acceptCharset="UTF-8"
-          onSubmit={handleSubmit}
-        >
+        className="student_contact_form"
+        action="https://crm.zoho.in/crm/WebToLeadForm"
+        name="WebToLeads896376000000420790"
+        method="POST"
+        acceptCharset="UTF-8"
+        onSubmit={handleSubmit}
+      >
+      
+
+      
           {/* Hidden Inputs */}
           <input type="hidden" name="xnQsjsdp" value="0615834f8daa7625cbc97a778b9a26316f6196045d288c13fd51827065c0fa5f" />
           <input type="hidden" name="zc_gad" id="zc_gad" value="" />
@@ -54,17 +57,13 @@ const ContactForm = () => {
           <input type="hidden" name="actionType" value="TGVhZHM=" />
           <input type="hidden" name="returnURL" value="https://www.alphaingen.com" />
 
-          <h2 className="student_contact_title">Contact Us</h2>
 
           <div className="student_contact_field">
             <label htmlFor="First_Name">First Name</label>
             <input type="text" id="First_Name" name="First Name" maxLength="40" />
           </div>
 
-          <div className="student_contact_field">
-            <label htmlFor="Last_Name">Last Name <span className="student_contact_required">*</span></label>
-            <input type="text" id="Last_Name" name="Last Name" maxLength="80" required />
-          </div>
+      
 
           <div className="student_contact_field">
             <label htmlFor="Mobile">Mobile</label>

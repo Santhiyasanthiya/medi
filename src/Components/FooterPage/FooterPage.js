@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import "./FooterPage.css";
 import { useNavigate } from "react-router-dom";
-import ContactPage from "../Contactpage/ContactPage";
+
 import footerLogo from "../../Assets/HeaderImage/homelogo.png"
 
 const FooterPage = () => {
   const navigate = useNavigate();
-  const [showPopup, setShowPopup] = useState(false);
 
-  const handleOpen = () => setShowPopup(true);
-  const handleClose = () => setShowPopup(false);
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  
   return (
     <div>
       <link
@@ -34,13 +38,15 @@ const FooterPage = () => {
           </div>
 
           <div className="container__more">
-            <h2 className="container__moreheading">Contact Alphaingen</h2>
-            <button
-              className="container__moreheading_button"
-              onClick={handleOpen}
-            >
-              Get In Touch
-            </button>
+        
+  <h3>Explore</h3>
+
+  <button onClick={() => scrollToSection("programme")}>Service</button>
+  <button onClick={() => scrollToSection("programme")}>Learning</button>
+  <button onClick={() => scrollToSection("whychoose")}>Why Alphaingen</button>
+  <button onClick={() => scrollToSection("endroll")}>Endroll</button>
+
+
           </div>
 
           <div className="container-pages flex">
@@ -114,16 +120,7 @@ const FooterPage = () => {
         </div>
       </footer>
 
-      {showPopup && (
-        <div className="footer_popup-overlay">
-          <div className="footer_popup-container">
-            <button className="footer_popup-close" onClick={handleClose}>
-              X
-            </button>
-            <ContactPage closePopup={handleClose} />
-          </div>
-        </div>
-      )}
+    
     </div>
   );
 };
