@@ -22,7 +22,7 @@ const PowerPractice = () => {
        <Fade direction='up' duration={1800}>
        <div className="PowerPractice">
             <p className="powerPractice_content">
-              We Power Practices. We Train Professionals.
+              We Power Practices We Train Professionals
               <br />
               Alphaingen is a leading medical coding and billing center, as well as a trusted training institution preparing the next generation of certified professionals. Whether you're a healthcare provider seeking accurate billing services or a student pursuing a career in healthcare revenue cycle management, Alphaingen has you covered.
             </p>

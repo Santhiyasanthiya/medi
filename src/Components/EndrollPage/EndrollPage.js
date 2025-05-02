@@ -27,18 +27,17 @@ const EndrollPage = () => {
 
       {/* Content */}
       <div className='content'>
-        <h1 className='endroll-page-main-heading'>ENDROLL NOW</h1>
+        <h1 className='endroll-page-main-heading'>ENROLL NOW</h1>
         <div className='endroll_content'>
-          <h3 className='whyalpha-subheading'>Who Can Endroll ?</h3>
+          <h3 className='whyalpha-subheading'>Who Can Enroll ?</h3>
           <div
       className="endroll_content-para"
-      style={{ backgroundImage: `url(${images[currentImage]})` }}
-    >
-  <p>Life science graduates</p>
-          <p>Healthcare professionals</p>
-          <p>Freshers looking for a career in healthcare administration</p>
-          <p>Working professionals aiming for a career shift</p>
-          <p>Anyone interested in medical coding & billing</p>
+      style={{ backgroundImage: `url(${images[currentImage]})` }}>
+          <p> 🧬 Life science graduates 🧬</p>
+          <p> 🧬 Healthcare professionals 🧬</p>
+          <p> 🧬 Freshers looking for a career in healthcare administration 🧬 </p>
+          <p> 🧬 Working professionals aiming for a career shift 🧬 </p>
+          <p> 🧬 Anyone interested in medical coding & billing 🧬 </p>
        
   </div>
   
@@ -57,9 +56,6 @@ const EndrollPage = () => {
 <ContactPage/>
 </div>
 </div>
-
-
-
 
 
       </div>

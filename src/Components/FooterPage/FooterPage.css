@@ -16,8 +16,8 @@
 }
 
 .container__recentpages {
-
   text-align: center;
+
 }
 
 
@@ -33,9 +33,9 @@
 
 
 .container__about p{
-  margin-top: 10px;
+  margin-top: 20px;
   max-width: 300px;
-  color: rgb(0, 0, 0);
+  color: rgb(77, 0, 0);
   font-size: 14px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
@@ -44,13 +44,13 @@
 
 
 .container__about h3{
-  margin-top: 10px;
+  margin-top: 20px;
   color: rgb(87, 0, 0);
   font-family: 'Times New Roman', Times, serif;
 
 }
 
-.container__more{
+/* .container__more{
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -65,10 +65,10 @@
 .container__more h2{
   color: rgb(87, 0, 0);
   font-family: 'Times New Roman', Times, serif;
-}
+} */
 
 
-.container__more button {
+/* .container__more button {
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   text-align: center;
@@ -76,8 +76,7 @@
   background-color: rgb(68, 0, 0);
   border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 8px;
-  /* padding: 10px 20px; */
-  /* margin: 5px; */
+
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
@@ -105,7 +104,7 @@
   background-color: rgb(100, 0, 0);
   color: #fff;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-}
+} */
 
 
 
@@ -238,6 +237,108 @@ footer .by p{
 
 
 
+/* Tablet and below (up to 800px) */
+@media only screen and (max-width: 800px) {
+  .hero {
+    padding: 20px 10px;
+    flex-direction: column;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .container__about h2,
+  .container__recentpages h2 {
+    font-size: 20px;
+  }
+
+  .container__about p,
+  .container-pages ul a,
+  footer .by p {
+    font-size: 14px;
+  }
+
+  .image-footer-logo {
+    height: 180px;
+  }
+
+  /* .container__more {
+    font-size: 16px;
+  } */
+
+  /* .container__more button {
+    font-size: 14px;
+    padding: 8px;
+  } */
+}
+
+/* Small devices (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .hero {
+    padding: 10px;
+    background-position: center;
+  }
+
+  .container__about p,
+  .container__more,
+  footer .by p {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .container__about h3,
+  .container__more h2 {
+    font-size: 18px;
+  }
+
+  /* .container__more button {
+    font-size: 12px;
+    padding: 6px 12px;
+  } */
+
+  .icon1 {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .image-footer-logo {
+    height: 140px;
+  }
+}
+
+/* Extra small devices (iPhone SE 2016 - 320px wide) */
+@media only screen and (max-width: 400px) {
+  .hero {
+    padding: 8px;
+  }
+
+  .container__about p,
+
+  footer .by p {
+    font-size: 12px;
+  }
+
+  .container__about h3
+ {
+    font-size: 16px;
+  }
+
+
+
+  .icon1 {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .image-footer-logo {
+    height: 120px;
+  }
+
+  .container-pages ul a {
+    font-size: 11px;
+  }
+}
 
 
 @media only screen and (max-width: 800px) {

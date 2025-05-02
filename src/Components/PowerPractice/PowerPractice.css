@@ -51,11 +51,11 @@
     color: rgb(78, 7, 7);
     line-height: 1.6;
     text-align: justify;
-    font-weight: 800;
-    font-family: "Dancing Script", cursive; /* Beautiful cursive font */
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     
-  }
+  }  
   
   
   /* Responsive Design */

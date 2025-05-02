@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./HeaderPage.css";
-import HeaderLogo from "../../Assets/HeaderImage/HeaderImage.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import homelogo from "../../Assets/HeaderImage/homelogo.png"
+import homeLogo from "../../Assets/HeaderImage/homelogo.png"; // Adjust path accordingly
+
+
 
 
 
@@ -19,26 +20,25 @@ const HeaderPage = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    setIsMenuOpen(false); // Close menu after clicking
+    setIsMenuOpen(false); // Close menu after click
   };
 
   return (
     <header className="headerPage">
-      
       <div className="headerPage-container">
-
-
         <nav className={`headerPage-nav-links ${isMenuOpen ? "open" : ""}`}>
           <button onClick={() => scrollToSection("home")}>Home</button>
           <button onClick={() => scrollToSection("programme")}>Service</button>
           <button onClick={() => scrollToSection("programme")}>Learning</button>
-       
           <button onClick={() => scrollToSection("whychoose")}>Why Alphaingen</button>
           <button onClick={() => scrollToSection("endroll")}>Endroll</button>
         </nav>
         <div className="headerPagemenu-icon" onClick={toggleMenu}>
-          {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
-        </div>
+  {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
+</div>
+
+
+
       </div>
     </header>
   );

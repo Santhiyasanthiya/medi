@@ -37,7 +37,7 @@ const FooterPage = () => {
             <p>India.</p>
           </div>
 
-          <div className="container__more">
+          {/* <div className="container__more">
         
   <h3>Explore</h3>
 
@@ -47,7 +47,7 @@ const FooterPage = () => {
   <button onClick={() => scrollToSection("endroll")}>Endroll</button>
 
 
-          </div>
+          </div> */}
 
           <div className="container-pages flex">
   <div className="container__recentpages">
@@ -93,7 +93,7 @@ const FooterPage = () => {
           <hr />
           <div className="icons">
             <a
-              href="https://www.instagram.com/..."
+              href="https://www.instagram.com/alphaingen_mcbc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
               className="icon1 icon--instagram"
               rel="noreferrer"
@@ -101,7 +101,7 @@ const FooterPage = () => {
               <i className="ri-instagram-line"></i>
             </a>
             <a
-              href="https://www.linkedin.com/..."
+              href="https://www.linkedin.com/company/alphaingen-medical-coding-and-billing-center/"
               target="_blank"
               className="icon1 icon--linkedin"
               rel="noreferrer"
@@ -109,7 +109,7 @@ const FooterPage = () => {
               <i className="ri-linkedin-line"></i>
             </a>
             <a
-              href="https://www.youtube.com/..."
+              href="https://youtube.com/@alphaingenmcbc?si=71nkpiYYvzewII7S"
               className="icon1 icon--youtube"
               target="_blank"
               rel="noopener noreferrer"

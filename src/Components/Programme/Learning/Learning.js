@@ -17,7 +17,7 @@ const Learning = () => {
           <p>Certified Professional Coder (CPC) Course</p>
           <p>Certified Coding Specialist (CCS) Course</p>
           <p>Certified Risk Adjustment Coder (CRC) Course</p>
-          <p>Advanced Medical Billing & AR Management</p>
+          <p>Advanced Medical Coding and Training</p>
           <p>Specialty Coding Programs (Cardiology, Radiology, Surgery, etc.)</p>
 
          

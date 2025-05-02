@@ -11,31 +11,47 @@
   background-image: url("https://www.shutterstock.com/image-photo/medical-bill-accounts-codes-electronic-260nw-1930282418.jpg");
   background-size: cover;
   background-position: center;
-  height:60vh;
+  height: 60vh;
   background-repeat: no-repeat;
   z-index: 1;
+  filter: blur(4px); /* blur the background image */
+  transform: scale(1.1); /* avoid edge blur cut */
 }
 
-/* Content on top of blur */
-.trainer-fluid > * {
-  position: relative;
+/* Optional dark overlay */
+.trainer-fluid::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0); /* light transparent overlay */
+  backdrop-filter: blur(1px); /* apply blur to background elements */
   z-index: 2;
 }
 
-
+/* Content on top */
+.trainer-fluid > * {
+  position: relative;
+  z-index: 3;
+}
 .text-section p {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s ease forwards;
   animation-delay: calc(var(--i) * 0.3s);
   font-size: 1.5rem;
-  background: linear-gradient(90deg, #f794d7, #5e0303); /* Your gradient colors */
+  background: linear-gradient(90deg, #f794d7, #5e0303); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-align: center;
   font-weight: 800;
   font-family: 'Times New Roman', Times, serif;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 

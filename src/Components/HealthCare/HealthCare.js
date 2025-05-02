@@ -12,13 +12,15 @@ const HealthCare = () => {
  
 <div className="Healthcare_Providers row">
   <div className="col-lg-6">
-  <h1 className="whyalpha-subheading mt-5">Healthcare Providers</h1>
+  <h1 className="whyalpha-subheading mt-5"> For Healthcare Providers</h1>
+<div className="healthcare_para">
 <p>Healthcare providers have seen a significant improvement in revenue cycles due to reduced claim denials.</p>
  <p>Fewer claim denials mean faster payments, improving cash flow and financial stability for healthcare providers</p>
 <p>Our HIPAA-compliant workflow ensures secure handling of patient data while enhancing operational efficiency for healthcare providers
 </p>
 <p>Certified coders manage your revenue cycle with precision, ensuring accurate claims and maximum reimbursements</p>
   
+</div>
   </div>
   <div className="col-lg-6">
 <Zoom duration={1300} ><img className="Healthcare_Providers_image" src="https://res.cloudinary.com/dmv2tjzo7/image/upload/v1744804125/wsiwbg0kdv3ohbsbl8vo.png"/>
