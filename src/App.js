@@ -11,6 +11,8 @@ import OurTraining from "./Components/OurTraining/OurTraining";
 import useGoogleAnalytics from "./useGoogleAnalytics";
 import EndrollPage from "./Components/EndrollPage/EndrollPage";
 import { Route, Router, Routes } from "react-router-dom";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const App = () => {
   useGoogleAnalytics();

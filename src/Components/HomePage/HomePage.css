@@ -35,9 +35,10 @@
 }
 
 .headerPage-image {
-  width: 320px;
+  width: 350px;
   margin-top: -180px;
   height: auto;
+
   animation: zoomIn 6.5s ease-in-out; /* Zoom animation */
 }
 

@@ -41,12 +41,15 @@
 
 /* Menu Icon */
 .headerPagemenu-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   display: none;
   font-size: 2rem;
   color: rgb(66, 2, 2);
   cursor: pointer;
   height: 30px;
-
 }
 
 .headerPagemenu-icon:hover {
