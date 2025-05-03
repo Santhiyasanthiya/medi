@@ -11,9 +11,13 @@ const HealthCare = () => {
      </div>
  
 <div className="Healthcare_Providers row">
+<div className="col-lg-6">
+<Zoom duration={1300} ><img className="Healthcare_Providers_image" src="https://res.cloudinary.com/dmv2tjzo7/image/upload/v1744804125/wsiwbg0kdv3ohbsbl8vo.png"/>
+</Zoom> 
+  </div>
   <div className="student-text-container col-lg-6">
   <h1 className="whyalpha-subheading mt-5"> For Healthcare Providers</h1>
-<div className="student-text mt-3">
+<div className="student-text">
 <p>Healthcare providers have seen a significant improvement in revenue cycles due to reduced claim denials.</p>
  <p>Fewer claim denials mean faster payments, improving cash flow and financial stability for healthcare providers</p>
 <p>Our HIPAA-compliant workflow ensures secure handling of patient data while enhancing operational efficiency for healthcare providers
@@ -22,10 +26,7 @@ const HealthCare = () => {
   
 </div>
   </div>
-  <div className="col-lg-6">
-<Zoom duration={1300} ><img className="Healthcare_Providers_image" src="https://res.cloudinary.com/dmv2tjzo7/image/upload/v1744804125/wsiwbg0kdv3ohbsbl8vo.png"/>
-</Zoom> 
-  </div>
+
 
 
 
@@ -33,15 +34,13 @@ const HealthCare = () => {
 
 
 <div className="second-row row">
-<div className="col-lg-6">
-  <Zoom duration={1500} >  <img  className="student-image" src="https://unity-connect.com/wp-content/uploads/2022/04/pros-and-cons-of-medical-billing-and-coding-Featured-image.jpg" alt="Informative" />
-  </Zoom></div>
+
 
 
 
       <div className="student-text-container col-lg-6 mt-3">
-        <h1 className='for_student mt-3'>For Student</h1>
-    <div className="student-text mt-3">
+        <h1 className='for_student '>For Student</h1>
+    <div className="student-text ">
     <p> Reduced claim denials mean students can focus more on learning and less on financial worries.</p>
       <p>Career-focused programs help students gain the skills they need to succeed in today’s job market.</p>
       <p>We provide international certification guidance to help students achieve global career opportunities.</p>
@@ -51,6 +50,9 @@ const HealthCare = () => {
     
     </div>
       </div>
+      <div className="col-lg-6">
+  <Zoom duration={1500} >  <img  className="student-image" src="https://unity-connect.com/wp-content/uploads/2022/04/pros-and-cons-of-medical-billing-and-coding-Featured-image.jpg" alt="Informative" />
+  </Zoom></div>
 </div>
    </div>  
     

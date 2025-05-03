@@ -1,16 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
-import Learning from "./Learning/Learning"; // Import Learning component
-import Service from "./Service/Service"; // Import Service component
+import Learning from "./Learning/Learning";
+import Service from "./Service/Service";
 import "./Programme.css";
 
-
-
 const Programme = () => {
-  const [showPopup, setShowPopup] = useState(null); // Track which popup is open
+  const [showPopup, setShowPopup] = useState(null);
+
+  // Lock body scroll when popup is open
+  useEffect(() => {
+    if (showPopup) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    return () => {
+      document.body.classList.remove("no-scroll"); // Cleanup on unmount
+    };
+  }, [showPopup]);
 
   return (
-    <div className="programme-container">
+    <div className="programme-container container">
       <Fade direction="down" duration={1500}>
         <h1 className="programme-page-main-heading">
           Elevate Your Potential with Expert Learning & Services
@@ -49,7 +60,6 @@ const Programme = () => {
         </div>
       </div>
 
-      {/* Popup Modal */}
       {showPopup && (
         <div className="popup-overlay" onClick={() => setShowPopup(null)}>
           <div className="popup-content" onClick={(e) => e.stopPropagation()}>

@@ -7,6 +7,8 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 2px 2px 5px rgb(43, 1, 8);
   animation: fadeIn 2s ease-in-out;
+  margin-top: 20px;
+  padding: 10px;
 }
 
 @keyframes fadeIn {
@@ -28,7 +30,6 @@
 }
 
 .endroll_content-para {
-  background: url("https://i.pinimg.com/736x/72/8d/fe/728dfeff858ccdb8868c9f6ef45124da.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,55 +38,70 @@
   font-size: 30px !important;
   font-family: 'Times New Roman', Times, serif;
   transition: background-image 1s ease-in-out;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.endroll_content-para p {
+  margin: 10px 0;
 }
 
 .endroll_content-para:hover {
   background-image: url("https://img.freepik.com/premium-photo/pink-ribbons-stethoscope-pastel-background-symbol-womens-breast-cancer-awareness_53476-6136.jpg");
 }
 
-/* Responsive design */
-@media (max-width: 1200px) {
-  .endroll-page-main-heading {
-    font-size: 2rem; /* Slightly smaller for tablets and smaller desktops */
-  }
-
-  .endroll_content {
-    font-size: 18px; /* Adjust font size for medium screens */
-  }
-
-  .endroll_content-para {
-    font-size: 28px !important; /* Adjust font size for medium screens */
-  }
-}
-
+/* ✅ Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .endroll-page-main-heading {
-    font-size: 1.8rem; /* Smaller font size for mobile screens */
+    font-size: 2rem;
   }
 
   .endroll_content {
-    font-size: 16px; /* Slightly smaller font for mobile */
-    margin: 15px 0; /* Adjust margin for mobile screens */
+    font-size: 18px;
   }
 
   .endroll_content-para {
-    font-size: 25px !important; /* Adjust font size for mobile */
-    padding: 15px; /* Reduce padding for smaller screens */
+    font-size: 22px !important;
+    padding: 15px;
+  }
+
+  .endroll_content-para p {
+    font-size: 18px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .endroll-page-main-heading {
-    font-size: 1.5rem; /* Even smaller font size for very small screens */
-  }
-
-  .endroll_content {
-    font-size: 14px; /* Adjust font size further for very small screens */
-    margin: 10px 0; /* Reduce margin for very small screens */
+    font-size: 1.8rem;
   }
 
   .endroll_content-para {
-    font-size: 22px !important; /* Smaller font size for very small screens */
-    padding: 10px; /* Further reduce padding for small screens */
+    font-size: 20px !important;
+    padding: 10px;
+  }
+
+  .endroll_content-para p {
+    font-size: 16px;
+  }
+}
+
+/* ✅ Ultra-small phones like iPhone SE (320px wide) */
+@media (max-width: 375px) {
+  .endroll-page-main-heading {
+    font-size: 1.5rem;
+  }
+
+  .endroll_content {
+    font-size: 16px;
+  }
+
+  .endroll_content-para {
+    font-size: 18px !important;
+    padding: 8px;
+  }
+
+  .endroll_content-para p {
+    font-size: 14px;
   }
 }

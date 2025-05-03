@@ -127,6 +127,10 @@
 
 // export default FooterPage;
 
+
+
+
+
 import React from 'react';
 import './FooterPage.css';
 import footerLogo from "../../Assets/HeaderImage/homelogo.png";
@@ -138,27 +142,37 @@ const FooterPage = () => {
         {/* Logo and Description */}
         <div className="alpha_footer-logoBlock">
           <img src={footerLogo} alt="Alphaingen Logo" className="alpha_footer-logo" />
-        
-        </div>
+    </div>
 
         {/* Address and Map */}
         <div className="alpha_footer-addressMapBlock">
-          <div className="alpha_footer-address">
+          <div className="alpha_footer-address mt-5">
+            <h3>Address</h3>
             <div className="alpha_footer-line">#13-C, Mosque Street,</div>
             <div className="alpha_footer-line">100 Feet Road, M.G. Nagar,</div>
             <div className="alpha_footer-line">Chennai, Tamil Nadu 600032</div>
             <div className="alpha_footer-line">India.</div>
           </div>
 
-          <div className="alpha_footer-map">
-            <iframe
-              title="Alphaingen Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31096.87053831438!2d80.22575765!3d12.97953645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525dc3f4792a23%3A0x536f5f22d024924!2sAlphaingen%20Medical%20Coding%20and%20Billing%20Center!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-              loading="lazy"
-              className="alpha_footer-mapiframe"
-              allowFullScreen
-            ></iframe>
-          </div>
+          <div className="alpha_footer-mapContainer">
+  <iframe
+    title="Alphaingen Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.510742474964!2d80.24119907587826!3d12.979675914778717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525dc4a4b64703%3A0x42b833e6c556b582!2sAlphaingen%20Medical%20Coding%20and%20Billing%20Center!5e0!3m2!1sen!2sin!4v1700000000000"
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  />
+  <a
+    href="https://www.google.com/maps/dir/?api=1&destination=Alphaingen%20Medical%20Coding%20and%20Billing%20Center%2C%2013C%2C%20Mosque%20Street%2C%20Chennai%2C%20Tamil%20Nadu%20600113"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="direction-btn"
+  >
+    Get Directions 🚗
+  </a>
+</div>
+
+
         </div>
       </div>
 

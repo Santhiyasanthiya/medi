@@ -31,7 +31,7 @@ const HeaderPage = () => {
           <button onClick={() => scrollToSection("programme")}>Service</button>
           <button onClick={() => scrollToSection("programme")}>Learning</button>
           <button onClick={() => scrollToSection("whychoose")}>Why Alphaingen</button>
-          <button onClick={() => scrollToSection("endroll")}>Endroll</button>
+          <button onClick={() => scrollToSection("endroll")}>Enroll</button>
         </nav>
         <div className="headerPagemenu-icon" onClick={toggleMenu}>
   {isMenuOpen ? <CloseIcon /> : <MenuIcon />}

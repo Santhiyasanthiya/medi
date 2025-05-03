@@ -36,9 +36,8 @@
   .Our_Services_para p {
     font-size: 1.2rem;
     color: #000000;
-    background: #f7b4e8;
     font-family: 'Times New Roman', Times, serif;
-    padding: 12px;
+    padding: 10px;
     border-radius: 8px;
     margin: 10px 0;
     transition: 0.3s ease-in-out;

@@ -12,6 +12,7 @@ import useGoogleAnalytics from "./useGoogleAnalytics";
 import EndrollPage from "./Components/EndrollPage/EndrollPage";
 import { Route, Router, Routes } from "react-router-dom";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import LogoHeader from "./Components/LogoHeader/LogoHeader";
 
 
 const App = () => {
@@ -24,11 +25,14 @@ const App = () => {
 
   return (
     <div>
+       <div id="home">
+        {/* <LogoHeader /> */}
+      </div>
       <div id="home">
         <HomePage />
       </div>
 
-   <Header />
+   <Header/>
 
       <div>
         <PowerPractice />
