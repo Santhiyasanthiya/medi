@@ -1,228 +1,192 @@
-.alpha_footer-container {
-  background: url('https://static.vecteezy.com/system/resources/previews/010/599/697/non_2x/abstract-smooth-curve-line-on-pink-gradient-lighting-color-background-vector.jpg') no-repeat center center;
+footer {
+  background-image: url('https://wallpaperswide.com/download/pink_gradient_background-wallpaper-5120x1440.jpg');
   background-size: cover;
-  font-family: sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Top Row Layout */
-.alpha_footer-topRow {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
+.footerImage {
+  height: 80px;
+  margin-bottom: 20px;
 }
 
-/* Logo Block */
-.alpha_footer-logoBlock {
-  flex: 1 1 250px;
-  text-align: center;
+.footer-overlay {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 40px 20px 20px 20px;
+  color: #460000;
 }
 
-.alpha_footer-logo {
-  width: 200px;
-  max-width: 100%;
-
-  animation: popIn 1.2s ease;
+footer h5 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #410101;
 }
 
-/* Address and Map Block */
-.alpha_footer-addressMapBlock {
-  display: flex;
-  flex: 2 1 500px;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* Address */
-.alpha_footer-address {
-  min-width: 180px;
-  font-size: 1.1rem;
-  color: #4b0000;
+footer p,
+footer a {
   font-family: 'Times New Roman', Times, serif;
-  animation: fadeInUp 1.5s ease;
-  flex: 1 1 250px;
-}
-
-/* Map Container */
-.alpha_footer-mapContainer {
-  flex: 1 1 300px;
-  text-align: center;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 15px;
-  transition: transform 0.3s ease;
-}
-
-.alpha_footer-mapContainer:hover {
-  transform: scale(1.01);
-}
-
-.alpha_footer-mapContainer iframe {
-  width: 100%;
-  max-width: 100%;
-  height: 200px;
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.alpha_footer-mapContainer .direction-btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #490303;
-  font-weight: bold;
-  font-size: 15px;
-  border: 2px solid #490000;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  color: #460000;
+  font-size: 18px;
   cursor: pointer;
 }
 
-.alpha_footer-mapContainer .direction-btn:hover {
-  background-color: #530202;
-  color: #fff;
+footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-/* Icons Row */
-.alpha_footer-iconsRow {
+footer a:hover {
+  color: #ff9800;
+  text-decoration: underline;
+}
+
+footer ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+footer .copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 0;
+  font-size: 0.85rem;
+  color: #460000;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Social Icons */
+.social-icons {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.alpha_footer-icon {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
+.social-icons a {
+  margin-right: 15px;
+  font-size: 2rem;
   transition: transform 0.3s ease;
 }
 
-.alpha_footer-icon:hover {
-  transform: scale(1.1);
+.social-icons a.youtube {
+  color: #FF0000;
 }
 
-.alpha_footer-icon.instagram {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111463.png');
+.social-icons a.instagram {
+  color: #E4405F;
 }
 
-.alpha_footer-icon.linkedin {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/145/145807.png');
+.social-icons a.linkedin {
+  color: #0077B5;
 }
 
-.alpha_footer-icon.youtube {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/1384/1384060.png');
+.social-icons a:hover {
+  transform: scale(1.2);
 }
 
-/* Divider */
-.alpha_footer-hr {
-  margin: 25px auto 10px;
-  width: 90%;
-  height: 1px;
-  background-color: #310000;
+/* Quick Links */
+.quick-links, .text-uppercase_quik{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  /* margin-bottom: 20px; */
+}
+.quick-links button {
+  display: block;
+  background: transparent;
   border: none;
+  font-family: 'Times New Roman', Times, serif;
+  color: #460000;
+
+  font-size: 20px;
+  cursor: pointer;
+
 }
 
-/* Bottom Text */
-.alpha_footer-bottom {
-  text-align: center;
-  font-size: 0.85rem;
-  color: #350000;
-  padding-bottom: 10px;
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  height: 0;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0;
 }
 
-@keyframes slideIn {
-  from { opacity: 0; transform: translateX(-30px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes popIn {
-  from { transform: scale(0); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
-
-@keyframes zoomIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
-
-@keyframes fadeInUp {
-  from { transform: translateY(30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-/* Media Queries */
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
-  .alpha_footer-logo {
-    width: 180px;
-    margin-top: -30px;
-  }
-
-  .alpha_footer-address {
-    font-size: 1rem;
+  footer .row {
     text-align: center;
- 
   }
 
-  .alpha_footer-mapContainer iframe {
-    height: 180px;
+  footer .col-lg-3 {
+    margin-bottom: 30px;
+  }
+
+  .social-icons {
+    justify-content: center;
   }
 }
 
 @media (max-width: 576px) {
-  .alpha_footer-container {
+  .footerImage {
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .footer-overlay {
     padding: 20px 10px;
   }
 
-  .alpha_footer-topRow {
-    flex-direction: column;
-    align-items: center;
+  .quick-links button {
+    font-size: 1rem;
+    padding: 4px 0;
   }
 
-  .alpha_footer-logo {
-    width: 160px;
+  .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 10px;
   }
 
-  .alpha_footer-addressMapBlock {
-    flex-direction: column;
-    align-items: center;
-    margin-top: -150px;
+  .map-responsive {
+    padding-bottom: 75%; /* Make map taller on small screens */
   }
 
-  .alpha_footer-address,
-  .alpha_footer-mapContainer {
-    width: 100%;
+  footer p,
+  footer a,
+  footer h5 {
+    font-size: 1rem;
     text-align: center;
   }
 
-  .alpha_footer-mapContainer iframe {
-    height: 160px;
-  }
-
-  .alpha_footer-mapContainer .direction-btn {
-    font-size: 14px;
-    padding: 8px 18px;
-  }
-
-  .alpha_footer-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .alpha_footer-bottom {
+  .copyright {
     font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .footerImage {
+    height: 50px;
+  }
+
+  .quick-links button {
+    font-size: 0.85rem;
+  }
+
+  .social-icons a {
+    font-size: 1.4rem;
+    margin-right: 8px;
+  }
+
+  footer h5,
+  footer p,
+  footer a {
+    font-size: 0.8rem;
   }
 }

@@ -6,19 +6,23 @@ const PowerPractice = () => {
   return (
     <div className="power_wrapper">
       <div className="power_container">
-        {/* Left Image Section */}
-        <div className="power_left">
+   <div className='row'>
+      
+ <div className='col-md-6 mt-5'>
+
           <Fade direction="left" duration={1200}>
             <img
-              src="https://res.cloudinary.com/dmv2tjzo7/image/upload/v1746264888/dsi64irjwtabuwhbnand.png"
+              src="https://img.freepik.com/free-photo/medical-banner-with-doctor-working-laptop_23-2149611211.jpg?semt=ais_hybrid&w=740"
               alt="Medical Billing & Coding"
               className="power_image"
             />
           </Fade>
-        </div>
+     
+ </div>
 
-        {/* Right Text Section */}
-        <div className="power_right">
+ <div className='col-md-6'>
+  
+ <div className="power_right">
           <Fade direction="up" duration={1400}>
             <div className="power_text_box">
               <p className="power_text">
@@ -29,6 +33,8 @@ const PowerPractice = () => {
             </div>
           </Fade>
         </div>
+ </div>
+   </div>
       </div>
     </div>
   );

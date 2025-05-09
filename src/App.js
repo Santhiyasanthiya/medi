@@ -25,14 +25,13 @@ const App = () => {
 
   return (
     <div>
-       <div id="home">
-        {/* <LogoHeader /> */}
-      </div>
+      <Header/>
+  
       <div id="home">
         <HomePage />
       </div>
 
-   <Header/>
+
 
       <div>
         <PowerPractice />

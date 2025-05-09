@@ -21,6 +21,11 @@
   margin: 10px auto;
   list-style: none;
 }
+/* Logo size */
+.logo-image {
+  width: 125px;
+  height: auto;
+}
 
 .headerPage-nav-links button {
   background: none;

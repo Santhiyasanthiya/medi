@@ -1,21 +1,15 @@
 import React from "react";
 import "./HomePage.css";
-import homelogo from "../../Assets/HeaderImage/homelogo.png"
+import homevideo from "../../Assets/HomeVideo/homevideo.mp4";
 
 const HomePage = () => {
   return (
     <div className="home-container">
-
+      {/* Background Video */}
       <video autoPlay muted loop className="homepage-background-video">
-        <source
-          src="https://res.cloudinary.com/dmv2tjzo7/video/upload/v1746262538/duvwbi5h5dvlwkylzby6.mp4"
-          type="video/mp4"
-        />
+        <source src={homevideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
-   
-     
     </div>
   );
 };

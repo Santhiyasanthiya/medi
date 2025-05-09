@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./HeaderPage.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -22,11 +22,27 @@ const HeaderPage = () => {
     }
     setIsMenuOpen(false); // Close menu after click
   };
+  const [animateLogo, setAnimateLogo] = useState(false);
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setAnimateLogo(true);
+    }, 1000); // 3 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
 
   return (
     <header className="headerPage">
       <div className="headerPage-container">
+        
+      <img src="https://res.cloudinary.com/dmv2tjzo7/image/upload/v1746264888/dsi64irjwtabuwhbnand.png" alt="Home Logo" className="logo-image" />
+
         <nav className={`headerPage-nav-links ${isMenuOpen ? "open" : ""}`}>
+
+     
           <button onClick={() => scrollToSection("home")}>Home</button>
           <button onClick={() => scrollToSection("programme")}>Service</button>
           <button onClick={() => scrollToSection("programme")}>Learning</button>
