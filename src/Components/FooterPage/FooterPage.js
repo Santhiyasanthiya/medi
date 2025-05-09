@@ -153,7 +153,7 @@ const Footer = () => {
                   Why Alphaingen
                 </button>
                 <button onClick={() => scrollToSection("endroll")}>
-                  Endroll
+                  Enroll
                 </button>
               </div>
             </div>
@@ -161,7 +161,7 @@ const Footer = () => {
             {/* Contact Info */}
             <div className="col-lg-3 col-md-12 mb-4">
               <h5 className="text-uppercase">Contact</h5>
-              <p>Email: info@zuppa.io</p>
+              <p>Email: head@alphaingen.com</p>
               <p>Phone: +91 98765 43210</p>
               <p>
                 13C, Mosque Street,
@@ -193,7 +193,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center copyright">
-        &copy; {new Date().getFullYear()} Zuppa Geo Navigation. All Rights Reserved.
+        &copy; {new Date().getFullYear()} Alphaingen. All Rights Reserved.
       </div>
     </footer>
   );
