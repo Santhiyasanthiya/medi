@@ -161,8 +161,8 @@ const Footer = () => {
             {/* Contact Info */}
             <div className="col-lg-3 col-md-12 mb-4">
               <h5 className="text-uppercase">Contact</h5>
-              <p>Email: head@alphaingen.com</p>
-              <p>Phone: +91 98765 43210</p>
+              <p>Email:info@alphaingen.com</p>
+              <p>Phone: +91 94453 52946</p>
               <p>
                 13C, Mosque Street,
                 <br />
